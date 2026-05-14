@@ -42,3 +42,26 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1, 3)//orginal array se niakl deta hai,includes last index
 console.log("C ", myArr);
 console.log(myn2);
+//====================================
+
+
+const heros=["thor","ironman",'batman']
+const heros2=["superman",'flash']
+//heros.push(heros2)
+//console.log(heros);
+//console.log(heros[3][1]);//array ke ander array
+const allheros=heros.concat(heros2)// returns new array
+console.log(allheros);
+
+const arr123=[1,2,3,[4,5,6],7,[6,7[4,5]]]
+const real_arr=arr123.flat(Infinity)
+console.log(real_arr);
+
+console.log(Array.from("sandeep"));//convert to array
+console.log(Array.from({name:"sandeep"}))//interesting
+
+// learn Array.is,Array.from,Array.of
+
+let score1=100;
+let score2=100;
+console.log(Array.of(score1,score2));
